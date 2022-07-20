@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: Breakdance Custom Elements
+ * Plugin Name: Louis Elements
  * Plugin URI: https://breakdance.com/
  * Description: ALPHA - NOT TO BE USED IN PRODUCTION
  * Author: Breakdance
