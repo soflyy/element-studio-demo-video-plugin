@@ -85,12 +85,74 @@ class Mydemoelement extends \Breakdance\Elements\Element
 
     static function designControls()
     {
-        return [];
+        return [c(
+        "asd",
+        "Asd",
+        [c(
+        "color",
+        "Color",
+        [],
+        ['type' => 'color', 'layout' => 'inline'],
+        false,
+        false,
+        [],
+      ), c(
+        "size",
+        "Size",
+        [],
+        ['type' => 'unit', 'layout' => 'inline'],
+        false,
+        false,
+        [],
+      )],
+        ['type' => 'section'],
+        false,
+        false,
+        [],
+      ), c(
+        "new_section",
+        "New Section",
+        [],
+        ['type' => 'section'],
+        false,
+        false,
+        [],
+      )];
     }
     
     static function contentControls()
     {
-        return [];
+        return [c(
+        "my_section",
+        "My Section",
+        [c(
+        "text",
+        "Text",
+        [],
+        ['type' => 'text', 'layout' => 'vertical'],
+        false,
+        false,
+        [],
+      )],
+        ['type' => 'section', 'layout' => 'vertical'],
+        false,
+        false,
+        [],
+      ), c(
+        "another",
+        "Another",
+        [getPresetSection(
+      "typography",
+      "Typography", 
+      "typography", 
+      "popout",
+       ['type' => 'section', 'sectionOptions' => ['type' => 'popout', 'preset' => ['type' => 'typography']]]
+     )],
+        ['type' => 'section', 'layout' => 'vertical'],
+        false,
+        false,
+        [],
+      )];
     }
 
     static function settingsControls()
